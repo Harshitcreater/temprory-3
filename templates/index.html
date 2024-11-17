@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduConnect: Student-Teacher Support Hub</title>
+    <style>
+        body {
+    background-image: url(BENNETT\ FIRST.webp);
+    background-repeat: no-repeat;
+    background-size: cover;/* Ensures the entire image is visible */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Optional: Makes the background fixed during scrolling */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+        h1 {
+    background-color: rgba(0, 0, 0, 0.3); /* More transparent dark background */
+    padding: 15px 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    text-align: center;
+    font-size: 1.2em;
+    max-width: 30%;
+    margin: 20px auto; /* Centers h1 at the top */
+    color: white; /* Ensures text remains readable */
+    backdrop-filter: blur(3px); /* Slight blur for improved contrast with the background */
+}
+
+        #h2 {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.3); /* Highly transparent white background */
+    color: #003366; /* Dark blue color for text */
+    padding: 10px 15px; /* Comfortable padding */
+    border-radius: 8px; /* Smooth rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    font-size: 1.2em; /* Slightly larger font size */
+    max-width: 200px; /* Increased max width for longer text */
+    margin: 40px auto; /* Center alignment with spacing */
+    backdrop-filter: blur(5px); /* Slight blur for improved contrast */
+}
+
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 80px; /* Gap between student and teacher images */
+            margin-top: 80px; /* Space between "Login As" and images */
+        }
+        .image-container img {
+            width: 300px; /* Increased width */
+            height: 300px; /* Increased height */
+            border-radius: 8px;
+            border: 3px solid rgba(255, 255, 255, 0.8); /* White border */
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+            background-color: rgba(0, 51, 102, 0.8); /* Dark blue background to match theme */
+            transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+        }
+        .image-container img:hover {
+            transform: scale(1.1); /* Slight zoom on hover */
+            box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.4); /* Intense shadow on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to EduConnect</h1> <!-- Main heading at the top -->
+    <div id="h2"><h2>Login As</h2></div> <!-- 'Login As' directly below -->
+    <section class="image-container">
+        
+        <a href= "http://127.0.0.1:5001">
+        <img src="student.png" alt="Student Login" ></a>
+        <a href="http://127.0.0.1:5000">
+        <img src="teacher.png" alt="Teacher Login"></a>
+    </section>
+</body>
+</html>

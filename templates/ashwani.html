@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Weekly Schedule</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='ashwani.css') }}">
+</head>
+<body>
+    <div class="teacher-container">
+        <!-- Teacher profile with image at the top -->
+        <div class="teacher-profile">
+            <img src="{{url_for('static',filename='Dr.Ashwani kumar.jpeg')}}" alt="Dr. Ashwani Kumar">
+            <h2>Dr. Ashwani Kumar</h2>
+        </div>
+
+        <!-- Flex container for Education and Research sections -->
+        <div class="info-sections">
+            <div class="education">
+                <p>Qualifications</p>
+                <ul>
+                    <li>Ph.D. (Computer Science and Engineering).</li>
+                    <li>M.Tech (Computer Science and Engineering).</li>
+                    <li>B.Tech(Computer Science and Engineering).</li>
+                </ul>
+            </div>
+            <div class="research">
+                <p>Researches</p>
+                <ul>
+                    <li>Image Security.</li>
+                    <li>Multimedia Application.</li>
+                    <li>Security & Privacy and Machine Learning.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Weekdays container -->
+        <div class="weekdays-container">
+            <div class="weekday" id="monday"><a href="{{ url_for('ashwanisirschedule') }}">Monday</a></div>
+            <div class="weekday" id="tuesday"><a href="{{ url_for('ashwanisirschedule') }}">Tuesday</a></div>
+            <div class="weekday" id="wednesday"><a href="{{ url_for('ashwanisirschedule') }}">Wednesday</a></div>
+            <div class="weekday" id="thursday"><a href="{{ url_for('ashwanisirschedule') }}">Thursday</a></div>
+            <div class="weekday" id="friday"><a href="{{ url_for('ashwanisirschedule') }}">Friday</a></div>
+        </div>
+    </div>
+</body>
+</html>

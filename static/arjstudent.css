@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #4a90e2;
+}
+
+/* Teacher Section Styling */
+.teacher-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #e3f2fd;
+    border-radius: 8px;
+}
+
+.teacher-image {
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #4a90e2;
+    margin-right: 20px;
+}
+
+.teacher-info h2 {
+    font-size: 1.5em;
+    color: #4a90e2;
+}
+
+/* Schedule Table Styling */
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.schedule-table thead {
+    background-color: #4a90e2;
+    color: white;
+}
+
+.schedule-table th, .schedule-table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.schedule-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.schedule-table tbody tr:hover {
+    background-color: #e3f2fd;
+}
+
+/* Hide the checkbox but still make it functional */
+.attendance-checkbox {
+    display: none;
+}
+
+/* Styling the label that acts as the button */
+.attendance-button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green for Present */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Change the button color when the checkbox is checked (Absent) */
+.attendance-checkbox:checked + .attendance-button {
+    background-color: #FF6347; /* Red for Absent */
+}
+
+/* Styling the label to change its text */
+.attendance-checkbox:checked + .attendance-button::after {
+    content: " Absent"; /* Text changes to Absent */
+}
+
+/* Initially set the label's text to Present */
+.attendance-button::after {
+    content: " Present";
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monday Schedule</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='aschedule.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Teacher’s Schedule</h1>
+        
+        <div class="teacher-section">
+            <img src="{{ url_for('static', filename='Apeksha-Koul.webp') }}" alt="Apeksha Koul" class="teacher-image">
+            <div class="teacher-info">
+                <h2>Apeksha Koul</h2>
+            </div>
+         <!-- Update Button -->
+         <button class="update-button" onclick="toggleEdit()">Update</button>
+        </div>
+
+        <table class="schedule-table" id="schedule-table">
+            <thead>
+                <tr>
+                    <th>Class Location</th>
+                    <th>Timing</th>
+                    <th>Attendance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" value="Room A1" class="editable" disabled></td>
+                    <td><input type="text" value="10:00 AM - 11:00 AM" class="editable" disabled></td>
+                    <td><input type="checkbox" id="attendance1" class="attendance-checkbox">
+                        <label for="attendance1" class="attendance-button"></label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" value="Room B2" class="editable" disabled></td>
+                    <td><input type="text" value="11:15 AM - 12:15 PM" class="editable" disabled></td>
+                    <td>
+                        <input type="checkbox" id="attendance2" class="attendance-checkbox">
+                        <label for="attendance2" class="attendance-button"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" value="Room A1" class="editable" disabled></td>
+                    <td><input type="text" value="10:00 AM - 11:00 AM" class="editable" disabled></td>
+                    <td><input type="checkbox" id="attendance3" class="attendance-checkbox">
+                        <label for="attendance3" class="attendance-button"></label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" value="Room A1" class="editable" disabled></td>
+                    <td><input type="text" value="10:00 AM - 11:00 AM" class="editable" disabled></td>
+                    <td><input type="checkbox" id="attendance4" class="attendance-checkbox">
+                        <label for="attendance4" class="attendance-button"></label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" value="Room A1" class="editable" disabled></td>
+                    <td><input type="text" value="10:00 AM - 11:00 AM" class="editable" disabled></td>
+                    <td><input type="checkbox" id="attendance5" class="attendance-checkbox">
+                        <label for="attendance5" class="attendance-button"></label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" value="Room A1" class="editable" disabled></td>
+                    <td><input type="text" value="10:00 AM - 11:00 AM" class="editable" disabled></td>
+                    <td><input type="checkbox" id="attendance6" class="attendance-checkbox">
+                        <label for="attendance6" class="attendance-button"></label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" value="Room A1" class="editable" disabled></td>
+                    <td><input type="text" value="10:00 AM - 11:00 AM" class="editable" disabled></td>
+                    <td><input type="checkbox" id="attendance7" class="attendance-checkbox">
+                        <label for="attendance7" class="attendance-button"></label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" value="Room A1" class="editable" disabled></td>
+                    <td><input type="text" value="10:00 AM - 11:00 AM" class="editable" disabled></td>
+                    <td><input type="checkbox" id="attendance8" class="attendance-checkbox">
+                        <label for="attendance8" class="attendance-button"></label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" value="Room A1" class="editable" disabled></td>
+                    <td><input type="text" value="10:00 AM - 11:00 AM" class="editable" disabled></td>
+                    <td><input type="checkbox" id="attendance9" class="attendance-checkbox">
+                        <label for="attendance9" class="attendance-button"></label></td>
+                </tr>
+            </tbody>
+            
+        </table>
+
+        
+        
+    </div>
+</body>
+</html>

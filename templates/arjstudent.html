@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Schedule</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='arjstudent.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Teacher’s Schedule</h1>
+        
+        <div class="teacher-section">
+            <img src="{{url_for('static',filename='35_Dr.-Arjun-Kumar-Assistant-Professor.jpg')}}" alt="Dr. Arjun Kumar" class="teacher-image">
+            <div class="teacher-info">
+                <h2>Dr. Arjun Kumar</h2>
+            </div>
+        </div>
+
+        <table class="schedule-table">
+            <thead>
+                <tr>
+                    <th>Class Location</th>
+                    <th>Timing</th>
+                    <th>Attendance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox" id="attendance1" class="attendance-checkbox">
+                        <label for="attendance1" class="attendance-button"></label></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox" id="attendance1" class="attendance-checkbox">
+                        <label for="attendance1" class="attendance-button"></label></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" id="attendance2" class="attendance-checkbox">
+                        <label for="attendance2" class="attendance-button"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox" id="attendance3" class="attendance-checkbox">
+                        <label for="attendance3" class="attendance-button"></label></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" id="attendance4" class="attendance-checkbox">
+                        <label for="attendance4" class="attendance-button"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox" id="attendance5" class="attendance-checkbox">
+                        <label for="attendance5" class="attendance-button"></label></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox" id="attendance1" class="attendance-checkbox">
+                        <label for="attendance1" class="attendance-button"></label></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox" id="attendance1" class="attendance-checkbox">
+                        <label for="attendance1" class="attendance-button"></label></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="checkbox" id="attendance1" class="attendance-checkbox">
+                        <label for="attendance1" class="attendance-button"></label></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Weekly Schedule</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+</head>
+<body>
+    <div class="teacher-container">
+        <div class="teacher-profile">
+            <img src="{{ url_for('static', filename='Apeksha-Koul.webp') }}" alt="Apeksha Koul">
+            <h2>Apeksha Koul</h2>
+        </div>
+        <div class="info-sections">
+            <div class="education">
+                <p>Qualifications</p>
+                <ul>
+                    <li>Ph.D. - Pursuing (Thesis Submitted).</li>
+                    <li>M.Tech (Computer Science and Engineering).</li>
+                    <li>B.E(Computer Science and Engineering).</li>
+                </ul>
+            </div>
+            <div class="research">
+                <p>Researches</p>
+                <ul>
+                    <li>AI & Deep Learning in Medical Diagnostics.</li>
+                    <li>Transfer Learning & Explainable AI.</li>
+                    <li>Automated Diagnostic Systems.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="weekdays-container">
+            <div class="weekday" id="monday"><a href="{{ url_for('aschedule') }}">Monday</a></div>
+            <div class="weekday" id="tuesday"><a href="{{ url_for('aschedule') }}">Tuesday</a></div>
+            <div class="weekday" id="wednesday"><a href="{{ url_for('aschedule') }}">Wednesday</a></div>
+            <div class="weekday" id="thursday"><a href="{{ url_for('aschedule') }}">Thursday</a></div>
+            <div class="weekday" id="friday"><a href="{{ url_for('aschedule') }}">Friday</a></div>
+        </div>
+        
+        
+    </div>
+</body>
+</html>

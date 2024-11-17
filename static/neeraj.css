@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container for the teacher profile and weekdays */
+.teacher-container {
+    width: 1100%;
+    height: 90%;
+    max-width: 1000px;
+    background-color: #F5F5F5;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Teacher profile styling */
+.teacher-profile {
+    margin-bottom: 10px;
+}
+.teacher-profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid #000000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.teacher-profile h2 {
+    margin: 15px 0 10px 0;
+    color: #333;
+    font-size: 1.2em;
+}
+
+/* Flex container for education and research sections */
+.info-sections {
+    display: flex;
+    
+    gap: 70px;
+    margin-top: 10px;
+}
+.education{margin-left: 15px;}
+.research{margin-right: 15px;}
+/* Education and Research section styling */
+.education, .research {
+    background-color: #e8e8e8;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    height: 190px;
+    padding: 20px;
+    max-width: 45%;
+    text-align: left;
+}
+
+.education p, .research p {
+    font-weight: bold;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.education ul, .research ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.education li, .research li {
+    font-size: 1.3em;
+    color: #333;
+    margin: 8px 0;
+}
+
+/* Weekdays container styling */
+.weekdays-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+/* Hover effect for weekdays */
+#monday:hover, #tuesday:hover, #wednesday:hover, #thursday:hover, #friday:hover {
+    color: #333;
+    transform: scale(1.08);
+    transition: transform 0.3s ease;
+}
+.weekday a {
+    color: inherit;
+    text-decoration: none; /* Remove underline */
+}
+
+
+/* Individual weekday styling */
+.weekday {
+    flex: 1;
+    padding: 30px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    border: 4px solid #ccc;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Gradient colors for each weekday */
+#monday {
+    background: linear-gradient(135deg, #9B4DCA, #FF66B2);
+    border-color: #9B4DCA;
+}
+#tuesday {
+    background: linear-gradient(135deg, #9B4DCA, #f35608);
+    border-color: #9B4DCA;
+}
+#wednesday {
+    background: linear-gradient(135deg, #9B59B6, #77c948);
+    border-color: #9B59B6;
+}
+#thursday {
+    background: linear-gradient(135deg, #8E44AD, #F39C12);
+    border-color: #8E44AD;
+}
+#friday {
+    background: linear-gradient(135deg, #9B4DCA, #37abc0);
+    border-color: #9B4DCA;
+}

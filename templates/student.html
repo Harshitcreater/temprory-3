@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='student.css') }}">
+</head>
+<body>
+
+    <!-- Teacher Container -->
+    <div class="teacher-container">
+        <a href="{{ url_for('apekshakaul') }}">
+            <img src="{{ url_for('static', filename='Apeksha-Koul.webp') }}" alt="Apeksha Kaul">
+        </a>
+        <p>School of Computer Science Engineering and Technology</p>
+        <p>Email: <a href="mailto:apekshakaul@bennett.edu.in">apekshakaul@bennett.edu.in</a></p>
+    </div>
+    <div class="teacher-container">
+        <a href="{{ url_for('ashwin') }}">
+            <img src="{{ url_for('static', filename='Dr.Ashwani kumar.jpeg') }}" alt="Dr. Ashwani Kumar">
+        </a>
+        <p>School of Computer Science Engineering and Technology</p>
+        <p>Email: <a href="mailto:ashwanikumar@bennett.edu.in">ashwanikumar@bennett.edu.in</a></p>
+    </div>
+    <div class="teacher-container">
+        <a href="{{ url_for('arjunkumar') }}">
+            <img src="{{ url_for('static', filename='35_Dr.-Arjun-Kumar-Assistant-Professor.jpg') }}" alt="Mr. Arjun Kumar">
+        </a>
+        <p>School of Computer Science Engineering and Technology</p>
+        <p>Email: <a href="mailto:arjunkumar@bennett.edu.in">arjunkumar@bennett.edu.in</a></p>
+    </div>
+
+</body>
+</html>
