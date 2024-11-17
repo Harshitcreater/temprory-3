@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='lgin.css') }}">
+    <!-- Make sure the path is correct -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+
 </head>
 <body>
     <div class="login-container">
         <img src="{{ url_for('static', filename='bennett logo.png') }}" alt="Login Icon">
         
         <!-- Login form -->
-        <form action="/login" method="post">
+        <form action="/login2" method="post">
             <!-- Username and Password input fields -->
             <input type="text" class="input-field" name="username" placeholder="Username" required>
             <input type="password" class="input-field" name="password" placeholder="Password" required>

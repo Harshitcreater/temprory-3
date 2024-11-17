@@ -20,7 +20,7 @@ body {
     background-color: rgba(255, 255, 255, 0.9); /* Light background to make form stand out */
     padding: 30px;
     width: 340px;
-    height: 400px; /* Set a fixed height for the container */
+    height: 450px; /* Set a fixed height for the container */
     border-radius: 10px;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
     gap: 20px; /* Adds space between elements */
